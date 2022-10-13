@@ -1,0 +1,57 @@
+<header class="block w-full h-screen font-mono from-transparent antialiased">
+  <nav class="flex justify-between p-5 md:h-24">
+    <a href="/" class="text-2xl">Afobaje's portfolio</a>
+    <div class="flex md:block md:w-8/12">
+      <div
+        class=" md:w-full mt-10 md:m-0 mr-auto ml-auto h-60 md:h-full md:static absolute justify-center md:p-0 p-10 bg-slate-300 md:bg-white opacity-80 md:opacity-100 content-center md:content-start w-5/6 right-12 md:flex"
+        [ngClass]="setTrue ? 'flex' : 'hidden'"
+      >
+        <ul
+          class="flex opt md:justify-between md:w-8/12 justify-evenly content-center md:flex-row flex-col h-full"
+        >
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a target="_blank" href="./../../assets/davidupdatedresume.pdf" download="">Download Resume</a></li>
+        </ul>
+      </div>
+      <button class="toggle flex md:hidden" (click)="toggle()">
+        <span [ngClass]="setTrue ? 'one' : ''"></span>
+        <span [ngClass]="setTrue ? 'two' : ''"></span>
+        <span [ngClass]="setTrue ? 'three' : ''"></span>
+      </button>
+    </div>
+  </nav>
+  <section
+    class="flex justify-center content-center mt-5 w-10/12 mr-auto ml-auto flex-col"
+  >
+    <div
+      class="flex justify-center content-center flex-col leading-relaxed m-auto"
+    >
+      <h1 class="font-bold text-6xl text-zinc-800">
+        Hi there! <br />
+        I am DAVID IKUKOYI
+      </h1>
+      <h2 class="text-blue-400 font-semibold text-4xl mt-5">
+        Frontend developer
+      </h2>
+    </div>
+    <div class="flex justify-center content-center ml-auto mt-5 mr-auto w-5/12">
+      <figure class="w-52 h-56">
+        <img
+          src="./../../assets/WhatsApp Image 2022-10-10 at 9.57.47 AM.jpeg"
+          alt="David Ikukoyi"
+          class="object-cover w-full h-full rounded-full"
+        />
+      </figure>
+    </div>
+  </section>
+  <section class="media -mt-10">
+    <ul class="flex justify-between w-4/12 p-10 mb-20 flex-col md:flex-row">
+      <li class="h-8 w-8 mt-6"><a href="https://linkedin.com/in/ikukoyi-david" target="_blank"><img src="./../../assets/icons8-linkedin-circled.svg" alt="" class="object-cover w-full h-full"></a></li>
+      <li class="h-8 w-8 mt-6"><a target="_blank" href="https://github.com/afobaje"><img src="./../../assets/icons8-github.svg" alt="" class="object-cover w-full h-full"></a></li>
+      <li class="h-8 w-8 mt-6"><a target="_blank" href="https://twitter.com/davidblaqq"><img src="./../../assets/icons8-twitter.svg" alt="" class="object-cover w-full h-full"></a></li>
+      <li class="h-8 w-8 mt-6"><a target="_blank" href="https://ikukoyidave@gmail.com"><img src="./../../assets/icons8-gmail.svg" alt="" class="object-cover w-full h-full"></a></li>
+    </ul>
+  </section>
+</header>

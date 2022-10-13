@@ -1,0 +1,29 @@
+.toggle{
+    /* display:flex; */
+    justify-content: space-between;
+    flex-direction: column;
+    height: 1.3rem;
+}
+.toggle span{
+    border: 1px solid black;
+    width: 2em;
+}
+.one{
+    rotate: 49deg;
+    transform: translateY(8px);
+    transition: all .6s ease-in-out;
+    
+}
+.two{
+    rotate:128deg;
+    transform: translateY(5px);
+    transition: all .6s ease-in-out;
+}
+.three{
+    opacity: 0;
+    transition: all .6s ease-in-out;
+}
+.opt{
+    transition: all .5s ease-in-out;
+    
+}
